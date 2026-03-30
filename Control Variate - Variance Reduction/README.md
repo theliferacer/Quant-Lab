@@ -22,9 +22,5 @@ $$\mathbb{E}[X] = S_0 \exp\left( \frac{1}{2}(\mu - \frac{\sigma^2}{6})T \right)$
 The implementation successfully demonstrates **Variance Reduction**. As seen in the generated histograms:
 1. **Vanilla MC (Blue)**: Exhibits a high-frequency spike at zero (Out-of-the-Money paths) and a long, volatile tail.
 2. **Control Variate (Orange)**: Results in a significantly narrower, more stable distribution centered around the mean, representing a much higher "precision-to-computation" ratio[cite: 135, 136].
-
-## 🚀 How to Run
-1. **Compile the C++ Engine**:
-   ```bash
    g++ -O3 src/main.cpp -o mc_engine
    ./mc_engine
